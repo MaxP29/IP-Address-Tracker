@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Leaflet API -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <!-- Scripts -->
+    <link href="Css/style.css" rel="stylesheet" />
+    <script async src="script.js" rel="script"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="top-container">
+        <h1 class="title">IP Address Tracker</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search"
+            placeholder="Search for any IP address or domain"
+          />
+          <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="data-card">
+          <ul class="data-list">
+            <li class="data IP">
+              <div class="data-title">IP Address</div>
+              <div class="data-value IPA">192.212.174.101</div>
+            </li>
+            <li class="data Location">
+              <div class="data-title">Location</div>
+              <div class="data-value LOCATION">Brooklyn, NY 10001</div>
+            </li>
+            <li class="data Timezone">
+              <div class="data-title">Timezone</div>
+              <div class="data-value TMZ">UTC -05:00</div>
+            </li>
+            <li class="data ISP">
+              <div class="data-title">ISP</div>
+              <div class="data-value ISPV">SpaceX Starlink</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="map" class="map-container"></div>
+    </main>
+  </body>
+</html>
