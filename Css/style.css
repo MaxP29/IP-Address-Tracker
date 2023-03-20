@@ -73,13 +73,14 @@ html {
 }
 
 .data-card {
-  width: 70vw;
+  /* width: 70%; */
   background-color: #fff;
   border-radius: 1rem;
   height: 20rem;
   display: flex;
   transform: translateY(50%);
   z-index: 1;
+  margin: 0 4rem;
 }
 
 .data-list {
@@ -132,7 +133,35 @@ html {
 
 @media (max-width: 1100px) {
   .data-card {
-    width: 80vw;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 840px) {
+  .data-card {
+    width: 90vw;
+  }
+
+  .data-title {
+    font-size: 1rem;
+  }
+
+  .data-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .data-card {
+    width: 95vw;
+  }
+
+  .data-title {
+    font-size: 1rem;
+  }
+
+  .data-value {
+    font-size: 2rem;
   }
 }
 
@@ -206,5 +235,20 @@ html {
     font-size: 2.2rem;
     font-weight: 700;
     margin: 0;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 667px) and (max-device-width: 926px) {
+  .top-container {
+    height: 40vh;
+  }
+
+  .data-value {
+    font-size: 1.8rem;
+  }
+
+  .data-card {
+    transform: none;
+    width: 92vw;
   }
 }
